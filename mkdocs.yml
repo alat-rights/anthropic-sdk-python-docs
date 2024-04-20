@@ -1,0 +1,19 @@
+site_name: Anthropic Python SDK
+theme:
+  name: material
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          handler: mkdocstrings.handlers.python
+          options:
+            show_source: true
+            show_root_heading: true
+            show_submodules: true
+            docstring_style: google
+          paths: ['src/anthropic', '.']
+nav:
+- _models: _models.md
+- _response: _response.md
+- _streaming: _streaming.md
